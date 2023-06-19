@@ -105,8 +105,10 @@ public class BST<T extends Comparable<T>> {
 	}
 
 	public T search(T item) throws ItemNotFound {
-
-
+		Node res = searchItem(item, root);
+		if(res == null)
+			throw new ItemNotFound ("El dato "+ item + " no esta");
+		return res.data;
 	}
 
 }
