@@ -104,4 +104,9 @@ public class BST<T extends Comparable<T>> {
 		return str;
 	}
 
+	public T search(T item) throws ItemNotFound {
+
+
+	}
+
 }
